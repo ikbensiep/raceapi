@@ -7,7 +7,7 @@ export function collection(teams: Team[]) {
         href: '/team',
       },
       item: teams.map(team => ({
-        href: `/team/${team.id}`,
+        href: team.href,
         title: team.name,
       })),
     },
@@ -22,7 +22,7 @@ export function item(team: Team) {
   return {
     _links: {
       self: {
-        href: `/team/${team.id}`,
+        href: team.href,
       },
       collection: {
         title: 'List of teams',
@@ -31,7 +31,6 @@ export function item(team: Team) {
     },
     name: team.name,
     level: team.level,
-    budget: team.budget,
     car: team.car,
   };
 }

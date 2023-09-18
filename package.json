@@ -1,6 +1,6 @@
 {
   "name": "@ikbensiep/raceapi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An api to manage a racing game including seasons, teams, competitions, venues and more",
   "main": "dist/index.js",
   "scripts": {
@@ -31,14 +31,18 @@
     "@curveball/links": "^0.3.0",
     "@curveball/problem": "^0.5.0",
     "@curveball/router": "^0.5.0",
-    "@curveball/validator": "^0.10.0"
+    "@curveball/validator": "^0.10.0",
+    "dotenv": "^16.3.1",
+    "knex": "^2.5.1",
+    "mysql2": "^3.6.1",
+    "ts-node": "^10.9.1"
   },
   "author": "Simon B. (https://lfo-industries.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/curveball/starter/issues"
   },
-  "homepage": "https://github.com/curveball/starter#readme",
+  "homepage": "https://github.com/ikbensiep/raceapi#readme",
   "devDependencies": {
     "@types/node": "^16.11.56",
     "@typescript-eslint/eslint-plugin": "^5.5.0",

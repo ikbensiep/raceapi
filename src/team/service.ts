@@ -1,31 +1,47 @@
-import { Team } from '../types';
+import { Team, NewTeam } from '../types';
 import { NotFound } from '@curveball/http-errors';
+import { knex, DbTeam} from '../knex';
 
-export function findAll(): Team[] {
-  return [
-    {
-      id: 0,
-      name: 'Privateer',
-      budget: 10000,
-      level: 0,
-      car: 0,
-    },
-    {
-      id: 1,
-      name: 'LFO Racing',
-      budget: 100000,
-      level: 1,
-      car: 1
-    }
-  ];
+export async function findAll(): Promise<Team[]> {
+  return (
+    await (knex.select().from('teams'))
+  ).map( record => mapRecord(record) );
 }
 
-export function findById(id: number): Team {
-  const team = findAll().find(team => team.id === id);
+export async function findById(id: number): Promise<Team> {
+  const records = await knex.select()
+    .from('teams')
+    .where('id', id );
 
-  if (!team) {
+  if(!records.length) {
     throw new NotFound(`Team with id ${id} not found`);
   }
 
-  return team;
+  return mapRecord(records[0]);
+
+}
+
+export async function create(team: NewTeam): Promise<Team> {
+  const result = await knex('teams').insert({
+    name: team.name,
+    level: team.level,
+    car: team.car,
+    competition: team.competition
+  });
+  return {
+    ...team,
+    href: `/team${result[0]}`,
+    id: result[0],
+  };
+}
+
+function mapRecord(input: DbTeam) {
+  return {
+    id: input.id,
+    href: `/team/${input.id}`,
+    name: input.name,
+    level: input.level,
+    car: input.car,
+    competition: input.competition
+  };
 }
