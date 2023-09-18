@@ -7,11 +7,15 @@ export type Person = {
 
 export type Team = {
   id: number;
+  href: string;
   name: string;
-  budget: number;
   car: number;
   level: number;
+  competition: number;
 }
+
+export type NewTeam =
+  Omit<Team, 'id' | 'href'>;
 
 export type Competition = {
   level: number;
