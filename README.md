@@ -40,7 +40,7 @@ Finishing a competition ends the season and allows the player to start a new sea
 🤡 Misc.
 --------
 
-Depending on the car category and the team's budget, car upgrades can be purchased such as (modified) wings, engine tuning etc.
+Depending on the competition category and the team's budget, car 🛠 upgrades can be purchased such as (modified) wings, engine tuning etc.
 
 
 💻 Getting started
