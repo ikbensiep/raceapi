@@ -18,7 +18,7 @@ For bragging rights, each venue has a leaderboard with the fastest laps driven a
 🕹️ Gameplay overview
 --------------------
 
-- 👶 Beginning as an amateur (go kart) racer and climbing up the ladder one step per `season`.
+- Beginning as an 👶 amateur (go kart) racer and climbing up the ladder one step per `season`.
 - The player enters a season by joining a 🏢 `team`, which competes in a competition.
 - Per season a team has access to various 🚗 `car`s, depending on those available in / eligible for the competition the team has entered.
 - The player can join a team when their 🏅 level matches the team's level.
