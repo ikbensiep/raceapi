@@ -4,7 +4,7 @@ import * as dotenv from 'dotenv';
 // If this file is loaded by the 'knex' CLI utility, it's missing a bunch of
 // things.
 if (process.env.CURVEBALL_ORIGIN === undefined) {
-  dotenv.config({path: __dirname + '/.env'});
+  dotenv.config({path: __dirname + '/../.env'});
 }
 
 
