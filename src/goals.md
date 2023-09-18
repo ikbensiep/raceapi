@@ -9,3 +9,4 @@
 - [x] Hook up mysql DB
 - [x] learn knex & get it going
   - [x] migrations
+  - [x] create new team function
