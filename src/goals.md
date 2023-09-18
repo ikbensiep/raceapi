@@ -10,3 +10,5 @@
 - [x] learn knex & get it going
   - [x] migrations
   - [x] create new team function
+
+## 3. Setup player, car, competitions APIs
