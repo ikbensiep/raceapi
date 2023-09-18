@@ -1,3 +1,4 @@
 import knexInit from 'knex';
+import * as configuration from '../knexfile';
 
-export const knex = knexInit();
+export default knexInit(configuration);
