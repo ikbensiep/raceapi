@@ -1,0 +1,59 @@
+Person
+  - id
+  - name
+  - career
+    - seasons [] (seasons.length - 1 = current career season)
+    - xp
+    - trophies []
+
+Season
+  - year (index)
+  - player_id
+  - team
+    - id (0 = privateer / amateur)
+    - contract
+  - results []
+
+Team
+  - id
+  - name
+  - competition_level
+  - budget
+    - sponsors
+  - facility { }
+  - car
+    - upgrades
+
+Competition
+  - id
+  - level/type (cars)
+  - rewards
+      - event xp
+      - championship xp + $$$
+  - events []
+  - sessions
+
+Event
+  - id
+  - name
+  - competition id
+  - venue
+  - finished ?
+
+Session 
+  - duration
+  - number of laps
+  - results (finishing order, fastest lap time)
+
+Venue
+  - id
+  - name
+  - map
+  - thumbnail / poster
+
+Car 
+  - id
+  - brand
+  - type/level
+  - textures[]
+  - engine_sfx

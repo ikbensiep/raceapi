@@ -1,7 +1,7 @@
 {
-  "name": "@curveball/starter",
+  "name": "@ikbensiep/raceapi",
   "version": "0.0.1",
-  "description": "Minimal curveball starter template",
+  "description": "An api to manage a racing game including seasons, teams, competitions, venues and more",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "tsc",
@@ -25,13 +25,15 @@
   "dependencies": {
     "@curveball/accesslog": "^0.4.0",
     "@curveball/bodyparser": "^0.6.1",
+    "@curveball/browser": "^0.20.2",
     "@curveball/controller": "^0.5.0",
     "@curveball/core": "^0.21.0",
     "@curveball/links": "^0.3.0",
     "@curveball/problem": "^0.5.0",
-    "@curveball/router": "^0.5.0"
+    "@curveball/router": "^0.5.0",
+    "@curveball/validator": "^0.10.0"
   },
-  "author": "Evert Pot (https://evertpot.com/)",
+  "author": "Simon B. (https://lfo-industries.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/curveball/starter/issues"

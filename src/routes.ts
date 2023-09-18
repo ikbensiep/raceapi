@@ -1,6 +1,13 @@
 import router from '@curveball/router';
-import homeController from './home/controller';
+import home from './home/controller';
+
+import teamCollection from './team/controller/collection';
+import team from './team/controller/item';
 
 export default [
-  router('/', homeController)
+  router('/', home),
+
+  router('/team', teamCollection),
+  router('/team/:teamId', team),
+
 ];
