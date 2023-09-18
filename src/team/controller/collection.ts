@@ -5,11 +5,11 @@ import * as hal from '../formats/hal';
 import * as teamService from '../service';
 
 class TeamCollection extends Controller {
-  get(ctx: Context) {
-
+  async get(ctx: Context) {
+    console.log('⛑ helb')
     ctx.response.type = 'application/hal+json',
     ctx.response.body = hal.collection(
-      teamService.findAll()
+      await teamService.findAll()
     );
 
   }
