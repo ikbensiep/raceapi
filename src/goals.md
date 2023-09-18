@@ -1,11 +1,11 @@
 ## 1. Setup Curveball, basic API
 
-- install curveball starter project
-- setup player/teams/competition scaffolding (static json)
-- list + display teams
+- [x] install curveball starter project
+- [x] setup player/teams/competition scaffolding (static json)
+- [x] list + display teams
 
 ## 2. Install Database with KNEX
 
-- Hook up mysql DB
-- learn knex & get it going
-  - migrations
+- [x] Hook up mysql DB
+- [x] learn knex & get it going
+  - [x] migrations
